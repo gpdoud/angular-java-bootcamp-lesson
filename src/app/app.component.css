@@ -1,0 +1,12 @@
+div {
+	display: inline-block;
+	vertical-align: text-top;
+}
+div#menu {
+	min-width: 25%;
+	background-color: #f8f8f8;
+	color: black;
+}
+div#content {
+	/*min-width: 74%;*/
+}

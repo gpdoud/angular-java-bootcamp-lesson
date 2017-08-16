@@ -1,0 +1,16 @@
+<div>
+	<h3>ContentComponent</h3>
+	<h5>The author of this is {{author}}</h5>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Color</th>
+			<th>Number</th>
+		</tr>
+		<tr *ngFor="let student of students">
+			<td>{{student.name}}</td>
+			<td>{{student.favColor}}</td>
+			<td>{{student.favNumber}}</td>
+		</tr>
+	</table>
+</div>
