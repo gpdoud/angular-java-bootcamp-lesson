@@ -1,16 +1,20 @@
 <div>
 	<h3>ContentComponent</h3>
 	<h5>The author of this is {{author}}</h5>
-	<table>
+	<table class="table table-bordered">
 		<tr>
 			<th>Name</th>
 			<th>Color</th>
 			<th>Number</th>
+			<th>Even/Odd</th>
 		</tr>
 		<tr *ngFor="let student of students">
-			<td>{{student.name}}</td>
+			<td (click)="nameOfStudent(student.name)">{{student.name}}</td>
 			<td>{{student.favColor}}</td>
 			<td>{{student.favNumber}}</td>
+			<td *ngIf='student.favNumber % 2 == 0'>Even</td>
+			<td *ngIf='student.favNumber % 2 != 0'>Odd</td>
 		</tr>
 	</table>
+	<button (click)="clickme()">Click me!</button>
 </div>

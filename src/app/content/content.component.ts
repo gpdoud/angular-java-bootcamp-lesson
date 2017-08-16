@@ -19,6 +19,14 @@ export class ContentComponent implements OnInit {
   	new Student("Eric", "Blue", 4)
   ];
 
+  nameOfStudent(name: string): void {
+  	console.log("clicked on", name);
+  }
+
+  clickme(): void {
+  	console.log("The button was clicked!");
+  }
+
   constructor() { }
 
   ngOnInit() {
