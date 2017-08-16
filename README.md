@@ -5,6 +5,10 @@ Download @angular/cli using npm (done only once per workstation)
 
     npm install -g @angular/cli
 
+Create an Angular project in a new directory
+
+    ng new [name]
+
 Create an Angular project in the current directory
 
     ng new -dir . [name]
