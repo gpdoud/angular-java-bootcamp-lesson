@@ -7,4 +7,4 @@ Download @angular/cli using npm
 
 Create an Angular project in the current directory
 
-    ng new --dir . [name]
+    ng new -dir . [name]
