@@ -11,4 +11,4 @@ Create an Angular project in the current directory
 
 Start an Angular project in a browser
 
-    ng serve -o
+    ng serve -o 
