@@ -9,7 +9,7 @@
 			<th>Even/Odd</th>
 		</tr>
 		<tr *ngFor="let student of students">
-			<td (click)="nameOfStudent(student.name)">{{student.name}}</td>
+			<td (click)="getSelectedStudent(student)">{{student.name}}</td>
 			<td>{{student.favColor}}</td>
 			<td>{{student.favNumber}}</td>
 			<td *ngIf='student.favNumber % 2 == 0'>Even</td>
@@ -17,4 +17,5 @@
 		</tr>
 	</table>
 	<button (click)="clickme()">Click me!</button>
+	<button (click)="displaySelectedStudent()">Display Student</button>
 </div>

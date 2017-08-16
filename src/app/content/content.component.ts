@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { Student } from '../student';
 
@@ -10,6 +10,16 @@ import { Student } from '../student';
 export class ContentComponent implements OnInit {
 
   author: string = "Greg";
+
+  selectedStudent: Student;
+
+  getSelectedStudent(student: Student) : void {
+  	this.selectedStudent = student;
+  }
+
+  displaySelectedStudent(): void {
+  	console.log("Selected student is", this.selectedStudent.name);
+  }
 
   students: Student[] = [
   	new Student("Kim", "Green", 10),
